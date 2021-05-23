@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+body {
+    height: 1000px;
+    width: 1000px;
+}
+section {
+    height: 1200px;
+    width: 1200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+section img {
+    height: 300px;
+    width: auto;
+}
+
+/*Queries*/
+@media(min-width: 0px) {
+
+    body{
+        background-color: black;
+    }
+    .mario1{
+        filter: blur(5px);
+    }
+    .mario2 {
+        opacity: 0%;
+    }
+    .mario3 {
+        opacity: 0%;
+    }
+
+}
+
+@media(min-width: 414px) {
+
+    body {
+        background-color: black;
+        
+    }
+    .mario1 {
+        filter: blur(10px);
+    }
+    .mario2 {
+        opacity: 50%;
+    }
+    .mario3 {
+        opacity: 0%;
+    }
+}
+@media(min-width: 768px) {
+
+    body {
+        background-color: black;
+    }
+    .mario1 {
+        opacity: 100%;
+    }
+    .mario2 {
+        filter: none;
+    }
+    .mario3 {
+        opacity: 0%;
+    }
+}
+@media(min-width: 1200px) {
+
+    body {
+        background-color: black;
+
+    }
+    .mario1 {
+        opacity: none;
+    }
+    .mario2 {
+        filter: none;
+    }
+    .mario3 {
+        opacity: 100%;
+    }
+}
